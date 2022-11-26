@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Semana16.Data;
 
 namespace Semana16.Migrations
 {
     [DbContext(typeof(semana16Context))]
-    partial class semana16ContextModelSnapshot : ModelSnapshot
+    [Migration("20221125160727_AddNewEntity")]
+    partial class AddNewEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
